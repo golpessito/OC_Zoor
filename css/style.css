@@ -1,0 +1,44 @@
+#main_wrapper{
+    width: 900px;
+    margin:auto;
+}
+
+#main_title{
+    display: inline-block;
+}
+
+#logo, header h1{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+/* Navigation */
+
+nav {
+    display: inline-block;
+    width:740px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-size: 1.3em;
+    color: #760001;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
