@@ -1,7 +1,51 @@
+/* Define custom fonts */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('fonts/ballpark.eot');
+    src: url('fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ballpark.woff') format('woff'),
+         url('fonts/ballpark.ttf') format('truetype'),
+         url('fonts/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('fonts/dayrom.eot');
+    src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General styles */
+
+body {
+    background: url('../img/yellow_background.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
 #main_wrapper{
     width: 900px;
     margin:auto;
 }
+
+
+/* Header */
 
 #main_title{
     display: inline-block;
@@ -10,13 +54,14 @@
 #logo, header h1{
     display: inline-block;
     margin-bottom: 0px;
+ 
 }
 
 /* Navigation */
 
 nav {
     display: inline-block;
-    width:740px;
+    width:640px;
     text-align: right;
 }
 
@@ -42,3 +87,109 @@ nav ul li a:hover {
     padding-bottom: 3px;
     text-decoration: none;
 }
+
+/** Banner Image **/
+
+#banner_image {
+    margin-top: 15px;
+    height: 200px;
+    background: url('../img/sanfrancisco.jpg') no-repeat;
+    border-radius: 5px;
+    position:relative;
+}
+
+#banner_description{
+    width: 99.2%;
+    height: 30px;
+    position:absolute;
+    bottom: 0;
+    color:white;
+    border:1px solid black;
+    background-color: rgb(24,24,24); /* Old browsers will read this */
+    background-color: rgba(24,24,24,0.8); /* New browsers will read this */
+    padding-top:15px;
+    padding-left: 4px;
+    font-size:0.8em;
+    padding-bottom: 10px;
+    padding-top: 0px
+}
+
+#banner_description p {
+    display: inline-block;
+}
+
+.red_button{
+    position: absolute;
+    right: 0;
+    color:white;
+    text-decoration: none;
+    background: url('../img/red_background.png') repeat-x;
+    border-radius: 5px;
+    padding: 3px 8px 0px 8px;
+    font-size:1.2em;
+    height: 25px;
+    border: 1px solid #760001;
+    text-align: center;
+    margin-top:5px;
+    margin-right: 5px;
+}
+
+/* BODY */
+
+article {
+    display: inline-block;
+    width: 650px;
+    vertical-align: top;
+}
+
+aside {
+    display: inline-block;
+    width: 240px; 
+}
+
+aside p {
+    text-align: justify;
+    padding: 10px;
+}
+
+aside{
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+   
+    vertical-align: top;
+    margin-top:20px;
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tweets {
+    width: 28%;
+    text-align: center
+}
+
+#my_pictures {
+    width: 36%;
+    padding-left:px;
+    text-align: center
+}
+
+#my_friends {
+    width: 34%;
+}
+
+#my_friends ul {
+    width: 34%;
+    display:inline-block;
+}
+
+#my_friends h2 {
+    text-align: center;
+}
+
